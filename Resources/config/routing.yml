@@ -1,4 +1,5 @@
 webfactory_exceptions:
-    resource: "@WebfactoryExceptionsBundle/Controller/TestController.php"
-    type:     annotation
-    prefix:   /_error
+    path:      /{code}/{_format}
+     defaults: { _controller: WebfactoryExceptionsBundle:Test:error , _format: "html" }
+     requirements:
+        code:   \d+
