@@ -54,6 +54,7 @@ public function registerBundles()
 # app/config/routing_dev.yml
 webfactory_exceptions:
     resource: "@WebfactoryExceptionsBundle/Resources/config/routing.yml"
+    prefix: /_error
 ```
 
 Great - now let's have a look at your error pages.
